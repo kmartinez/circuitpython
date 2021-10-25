@@ -1,7 +1,7 @@
 # send data MQTT to our VM
+# Change the mqtt_topic to yourID/temperature
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
-
 import ssl
 import socketpool
 import wifi
