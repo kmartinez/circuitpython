@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Run this on Win10/Linux/Mac to send a message to the MQTT broker
-# change the publish topic for your own message
+# change the publish topic to your own message
 import paho.mqtt.client as mqtt
 
 broker = "srv03183.soton.ac.uk"
