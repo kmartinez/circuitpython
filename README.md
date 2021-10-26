@@ -13,6 +13,9 @@ QWIIC Sensors:
 aht20  
 sensor9809  
 
+Other features:  
+ deep-sleep - use alarm to deep sleep and cold-wake
+
 Wifi and networking:  
 trywifi - link to wifi (using secrets.py)  
 wifi-http-get - fetch data from the web  
