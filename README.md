@@ -17,6 +17,7 @@ Wifi and networking:
 trywifi - link to wifi (using secrets.py)
 wifi-http-get - fetch data from the web
 mqtt-sender - send message to a broker
+openweather - shows how to get data from weather API
 
 Code for linux/win10:
 mqttlisten - listener for mqtt messages
