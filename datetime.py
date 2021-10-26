@@ -1,4 +1,4 @@
-# learn about real time clock
+# learn about the real time clock
 # without an external RTC it resets on power cycles
 import rtc
 import time
