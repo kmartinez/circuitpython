@@ -1,4 +1,4 @@
-Circuitpython for the featherS2 boards used in foundations of IoT  
+Circuitpython for the featherS2 boards used in ECS modules
 Basics:  
 simpleLED - onboard blue LED  
 rgbled - onboard RGB led  
@@ -18,6 +18,7 @@ Other features:
 
 Wifi and networking:  
 trywifi - link to wifi (using secrets.py)  
+wifimaintainer - keeps wifi on in case it drops
 wifi-http-get - fetch data from the web  
 mqtt-sender - send message to a broker  
 openweather - shows how to get data from weather API  
