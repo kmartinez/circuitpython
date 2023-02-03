@@ -18,7 +18,7 @@ Other features:
 
 Wifi and networking:  
 trywifi - link to wifi (using secrets.py)  
-wifimaintainer - keeps wifi on in case it drops
+wificonnect - keeps wifi on in case it drops
 wifi-http-get - fetch data from the web  
 mqtt-sender - send message to a broker  
 openweather - shows how to get data from weather API  
