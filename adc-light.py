@@ -1,14 +1,13 @@
-# circuitpython to read an adc
-# use IO4 - onboard light sensor
-# adc gives a 16bit value but shifted up from 12 hence /16
-# prints with brackets so that Mu plotter can plot it
+# simple example reading an ADC port
+# check the comment to choose for S2 light (which is on an adc) or S3
 import analogio
 import time
 from board import *
-
-pin = analogio.AnalogIn(IO4)
+# featherS2 light sensor
+#ADCPORT = IO4
+# feather ESP32-S3 adc0
+ADCPORT = A0
+pin = analogio.AnalogIn(ADCPORT)
 while True:
     print((pin.value/16, ))
-    time.sleep(0.1)
-
-
+    time.sleep(0.5)
