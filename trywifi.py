@@ -1,14 +1,7 @@
-# try wifi, get mac, ping google
+# try wifi, print all ssids, connect, ping google
 # Uses the traditional secrets.py file for credentials
 import wifi
 import ipaddress
-
-def formatmac(mac):
-    smac = ""
-    for ot in list(mac):
-        h = hex(ot)
-        smac += h[2] + h[3]
-    return(smac)
 
 print("Available WiFi networks:")
 for network in wifi.radio.start_scanning_networks():
@@ -24,11 +17,6 @@ except ImportError:
     raise
 print("connencting to ", secrets["ssid"])
 wifi.radio.connect(secrets["ssid"], secrets["password"])
-
-print("My IP address is", wifi.radio.ipv4_address)
-mac = wifi.radio.mac_address
-
-print("my MAC: ", formatmac(mac))
 
 googleIP = ipaddress.ip_address("8.8.4.4")
 print("Ping google.com: %f ms" % (wifi.radio.ping(googleIP)*1000))
